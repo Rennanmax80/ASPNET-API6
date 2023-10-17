@@ -1,5 +1,8 @@
-﻿using Newtonsoft;
+﻿using Microsoft.Extensions.FileProviders;
+using Newtonsoft;
 using Newtonsoft.Json.Serialization;
+using Microsoft.Extensions.FileProviders;
+using System.IO;
 
 namespace WebApplication1
 {
@@ -49,6 +52,13 @@ namespace WebApplication1
             app.UseAuthorization();
 
             app.MapControllers();
+
+            app.UseStaticFiles(new StaticFileOptions
+            { 
+                FileProvider = new PhysicalFileProvider(
+                    Path.Combine(Directory.GetCurrentDirectory(), "Photos")),
+                    RequestPath = "/Photos"
+            });
         }
     }
 }
