@@ -1,4 +1,7 @@
-﻿namespace WebApplication1
+﻿using Newtonsoft;
+using Newtonsoft.Json.Serialization;
+
+namespace WebApplication1
 {
     public class Startup
     {
@@ -11,6 +14,18 @@
         // This method gets called by the runtime. Use this method to add serices to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            //Enable Cors
+            services.AddCors(c =>
+            {
+                c.AddPolicy("AllowOrigin", options => options.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
+            });
+
+            //JSON Serialize
+            services.AddControllersWithViews().AddNewtonsoftJson(options =>
+            options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore)
+                .AddNewtonsoftJson(options => options.SerializerSettings.ContractResolver
+                = new DefaultContractResolver());
+
             services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             services.AddEndpointsApiExplorer();
@@ -20,6 +35,10 @@
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(WebApplication app, IWebHostEnvironment env)
         {
+            //Enable Cors
+            app.UseCors(options=>options.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader()); 
+            
+
             // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
             {
