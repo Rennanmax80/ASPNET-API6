@@ -80,7 +80,7 @@ namespace WebApplication1.Controllers
         {
             string query = @"
                     update dbo.Department 
-                    set @DepartmentName
+                    set DepartmentName=@Departmentname
                     where DepartmentId=@DepartmentId
                     ";
 
