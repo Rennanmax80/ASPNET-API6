@@ -3,6 +3,8 @@
     public class Product
     {
 
+        public int ID { get; set; }
+
         public string PRODUTO_PUBLI { get; set; }
 
         public string PRODUTO_FINAL { get; set; }
@@ -12,7 +14,9 @@
 
         public string DT_FINAL { get; set; }
 
-        public float PERCENTUAL_RATEIO { get; set; }
+        public int GRUPO { get; set; }
+
+        public float? PERCENTUAL_RATEIO { get; set; }
 
         public string CCUSTO_CLI { get; set; }
 
