@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\wwwroot\\PUBLI\\API\\WebApplication1\\WebApplication1\\WebApplication1.csproj": {}
+    "C:\\wwwroot\\PUBLI\\ASPNET-API6\\WebApplication1\\WebApplication1.csproj": {}
   },
   "projects": {
-    "C:\\wwwroot\\PUBLI\\API\\WebApplication1\\WebApplication1\\WebApplication1.csproj": {
+    "C:\\wwwroot\\PUBLI\\ASPNET-API6\\WebApplication1\\WebApplication1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\wwwroot\\PUBLI\\API\\WebApplication1\\WebApplication1\\WebApplication1.csproj",
+        "projectUniqueName": "C:\\wwwroot\\PUBLI\\ASPNET-API6\\WebApplication1\\WebApplication1.csproj",
         "projectName": "WebApplication1",
-        "projectPath": "C:\\wwwroot\\PUBLI\\API\\WebApplication1\\WebApplication1\\WebApplication1.csproj",
-        "packagesPath": "C:\\Users\\rmaxwell\\.nuget\\packages\\",
-        "outputPath": "C:\\wwwroot\\PUBLI\\API\\WebApplication1\\WebApplication1\\obj\\",
+        "projectPath": "C:\\wwwroot\\PUBLI\\ASPNET-API6\\WebApplication1\\WebApplication1.csproj",
+        "packagesPath": "C:\\Users\\renna\\.nuget\\packages\\",
+        "outputPath": "C:\\wwwroot\\PUBLI\\ASPNET-API6\\WebApplication1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\rmaxwell\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\renna\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -59,8 +57,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -72,7 +69,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.319\\RuntimeIdentifierGraph.json"
         }
       }
     }
